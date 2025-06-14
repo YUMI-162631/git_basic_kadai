@@ -1,0 +1,116 @@
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/kadai/git_challenge (main)
+$ cd /C/Users/yumib/20250615kadai
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai
+$ mkdir git_challenge
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai
+$ cd git_challenge
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/yumib/20250615kadai/git_challenge/.git/
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ echo "Hello,world!" >> hello_world.txt
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ ls
+hello_world.txt
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ cat hello_world.txt
+Hello,world!
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello_world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ git add -A
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) bca19a4] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ ls
+hello_world.txt
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ cat hello_world.txt
+Hello,world!
+こんにちは、世界！
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ git add -A
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main cb1c8bb] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ git log
+commit cb1c8bbb4f38a418fa1f722379157296d6dd60be (HEAD -> main)
+Author: YUMI-162631 <hasumi.ym162631@gmail.com>
+Date:   Sun Jun 15 02:42:00 2025 +0900
+
+    日本語訳を追記
+
+commit bca19a4bcb100a005997db2ed3271fa42bef488e
+Author: YUMI-162631 <hasumi.ym162631@gmail.com>
+Date:   Sun Jun 15 02:39:14 2025 +0900
+
+    hello_world.txtを追加
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/git_challenge (main)
+$ cd /C/Users/yumib/20250615kadai
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai
+$ mkdir kadai_005
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai
+$ cd kadai_005
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/kadai_005
+$ ^CAdd commentMore actions
+
+
+yumib@LAPTOP-BJM0CJDO MINGW64 /C/Users/yumib/20250615kadai/kadai_005
+$ echo "" >> kadai_005.txt
